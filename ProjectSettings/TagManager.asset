@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Collection
+  - Enemy
+  - Collection_egg
+  - Collection_ginseng
+  - props_honey
+  - props_apple
+  - props_candle
+  - Collection_tail
+  - Cookie
+  - Ant
+  - Straw
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - ground
+  - Player
+  - Enemy
+  - Wall
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 4047713203
+    locked: 0
+  - name: environment
+    uniqueID: 3681611803
+    locked: 0
+  - name: player
+    uniqueID: 2641657509
+    locked: 0
+  - name: frontground
+    uniqueID: 4193223005
+    locked: 0
+  - name: ground
+    uniqueID: 4150023789
+    locked: 0
+  - name: props
+    uniqueID: 2889830643
+    locked: 0
+  - name: enemy
+    uniqueID: 1588954985
+    locked: 0
+  - name: straw
+    uniqueID: 1867483643
+    locked: 0
