@@ -77,18 +77,15 @@ public class Boba_controller : MonoBehaviour
         timer += Time.deltaTime;
 
         //跳躍按鈕偵測 - 一般狀態
-        if(Input.GetButtonDown("Jump") && jumpCount > 0 && !apple_acttime)
-        {
+        if(Input.GetButtonDown("Jump") && jumpCount > 0 && !apple_acttime){
             jumpPressed = true;
         }
 
         //跳躍按鈕偵測 - 毒蘋果狀態
-        else if(Input.GetButtonDown("Jump") && apple_acttime )
-        {
+        else if(Input.GetButtonDown("Jump") && apple_acttime ){
             crouchPressed = true;
         }
-        else if(Input.GetButtonUp("Jump") && apple_acttime)
-        {
+        else if(Input.GetButtonUp("Jump") && apple_acttime){
             crouchPressed = false;
         }
         if(!Physics2D.OverlapCircle(cellingCheck.position,0.2f,ground) && apple_acttime)
