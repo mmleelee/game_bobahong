@@ -1408,7 +1408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vSpeed: 0.5
-  hSpeed: 1
+  hSpeed: 1.5
   player: {fileID: 1629262546}
 --- !u!81 &324833727
 AudioListener:
@@ -5717,7 +5717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1629262543}
-  speed: 1
+  speed: 1.5
   speedBack: 3
   distanceBetween: 8
   pos: {fileID: 1467506796}
@@ -6814,7 +6814,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629262543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.68, y: -3.62, z: 0}
+  m_LocalPosition: {x: 0.17, y: -3.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -7595,7 +7595,7 @@ MonoBehaviour:
   isGround: 0
   isCrouch: 0
   Cherry: 0
-  jumpforce: 600
+  jumpforce: 650
   speed: 100
   initialSpeed: 350
   timer: 0
