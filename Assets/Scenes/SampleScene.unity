@@ -6122,6 +6122,7 @@ GameObject:
   - component: {fileID: 1481707681}
   - component: {fileID: 1481707684}
   - component: {fileID: 1481707683}
+  - component: {fileID: 1481707685}
   m_Layer: 0
   m_Name: "_\u8D77\u9EDE"
   m_TagString: Untagged
@@ -6234,6 +6235,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12.621475, y: 10.57186}
   m_EdgeRadius: 0
+--- !u!68 &1481707685
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481707680}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -5.7061896, y: -1.742901}
+  - {x: -5.724404, y: -0.54130197}
+  - {x: -5.703093, y: 0.60461473}
+  - {x: -4.9284396, y: 0.60540926}
+  - {x: 1.1827474, y: 1.870889}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1492333562
 GameObject:
   m_ObjectHideFlags: 0
