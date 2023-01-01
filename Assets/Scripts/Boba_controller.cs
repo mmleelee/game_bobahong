@@ -427,7 +427,6 @@ public class Boba_controller : MonoBehaviour
 
         //被吸走死掉
         if (collision.gameObject.tag == "Straw") {
-            Debug.Log("Dead");
             FindObjectOfType<GameManager>().EndGame(); 
         }
     }

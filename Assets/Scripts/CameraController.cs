@@ -19,27 +19,13 @@ public class CameraController : MonoBehaviour
         // cameraPosition.x += speed;
         // cameraPosition.y = player.position.y;
         // Camera.main.gameObject.transform.position = cameraPosition;
-
-        if (Straw.isInStraw) {
-            //Debug.Log(Straw.isInStraw);
-            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x + hSpeed, transform.position.y, transform.position.z), ref velocity, vSpeed);
-        } else {
-            //Debug.Log(Straw.isInStraw);
-            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x + hSpeed, player.position.y + 2.3f, transform.position.z), ref velocity, vSpeed);
+        
+        if(StartingPoint.isStart) {
+            if (Straw.isInStraw) {
+                transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x + hSpeed, transform.position.y, transform.position.z), ref velocity, vSpeed);
+            } else {
+                transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x + hSpeed, player.position.y + 2.3f, transform.position.z), ref velocity, vSpeed);
+            }
         }
-        
-        // if (player.position.y < 10) {
-        //     transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x + hSpeed, player.position.y, transform.position.z), ref velocity, vSpeed);
-        // } else {
-        //     transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x + hSpeed, 10, transform.position.z), ref velocity, vSpeed);
-        // }
-        
-        //transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
     }
-
-    public void MoveToNewRoom(Transform _newRoom) {
-        currentPosY = _newRoom.position.y;
-    }
-    
-    
 }
