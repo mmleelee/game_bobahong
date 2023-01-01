@@ -8,6 +8,7 @@ public class Boba_controller : MonoBehaviour
     private Animator anim;
 
     private bool isHurt;
+    private bool cannotMove;
     int flag = 1;
     public bool jumpPressed, crouchPressed;
     public bool standIsAble;
@@ -16,6 +17,7 @@ public class Boba_controller : MonoBehaviour
 
     public Collider2D circlecoll;
     public Collider2D squarecoll;
+    public Collider2D squashedcoll;
     public LayerMask ground;
     public Transform cellingCheck;
     public Transform groundCheck;
@@ -131,7 +133,7 @@ public class Boba_controller : MonoBehaviour
     void FixedUpdate()
     {
         isGround = Physics2D.OverlapCircle(groundCheck.position, 0.2f, ground);
-        if(!isHurt){
+        if(!isHurt && !cannotMove){
             Movement();
         }
         Jump();
@@ -419,9 +421,12 @@ public class Boba_controller : MonoBehaviour
         else if(collision.gameObject.tag == "Cookie"){
             if(transform.position.x < collision.gameObject.transform.position.x){
                 isHurt = true;
-                //anim.SetBool("squashed",true);
+                anim.SetBool("squashed",true);
                 squarecoll.enabled = false;
                 circlecoll.enabled = false;
+                squashedcoll.enabled = true;
+                cannotMove = true;
+                FindObjectOfType<GameManager>().EndGame(); 
             }
         }
 
