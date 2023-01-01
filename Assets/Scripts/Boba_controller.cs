@@ -161,7 +161,7 @@ public class Boba_controller : MonoBehaviour
     {
         if((timer-honeyCurrentTime)<5){
             speed=initialSpeed/2;
-            jumpforce=jumpforce/2;
+            Jump();
             anim.SetBool("ishoney" , true);
         }
         else {
