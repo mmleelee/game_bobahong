@@ -4996,7 +4996,7 @@ GameObject:
   m_Layer: 9
   m_Name: ground
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5478,7 +5478,7 @@ GameObject:
   m_Layer: 9
   m_Name: celling
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6863,6 +6863,7 @@ GameObject:
   - component: {fileID: 1629262547}
   - component: {fileID: 1629262549}
   - component: {fileID: 1629262566}
+  - component: {fileID: 1629262567}
   - component: {fileID: 1629262551}
   - component: {fileID: 1629262552}
   - component: {fileID: 1629262554}
@@ -7694,6 +7695,7 @@ MonoBehaviour:
   jumpCount: 0
   circlecoll: {fileID: 1629262550}
   squarecoll: {fileID: 1629262566}
+  squashedcoll: {fileID: 1629262567}
   ground:
     serializedVersion: 2
     m_Bits: 256
@@ -7741,7 +7743,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0044693947, y: -0.25026038}
+  m_Offset: {x: 0.015581131, y: -0.21692508}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7752,7 +7754,33 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.87681293, y: 0.35947925}
+  m_Size: {x: 0.5952482, y: 0.29280865}
+  m_EdgeRadius: 0
+--- !u!61 &1629262567
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629262543}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008466244, y: -0.045152426}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.85, y: 0.86}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5847244, y: 0.57777834}
   m_EdgeRadius: 0
 --- !u!1 &1646731612
 GameObject:
@@ -8780,6 +8808,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2039618680}
     m_Modifications:
+    - target: {fileID: 3476080377155042144, guid: 32d6b0a700fcd5c4b9a334b585ecbca9, type: 3}
+      propertyPath: m_Mass
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3476080377155042146, guid: 32d6b0a700fcd5c4b9a334b585ecbca9, type: 3}
+      propertyPath: Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3476080377155042146, guid: 32d6b0a700fcd5c4b9a334b585ecbca9, type: 3}
       propertyPath: camera
       value: 
