@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class playMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
+
+
     public void GoBackChoosePage()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);

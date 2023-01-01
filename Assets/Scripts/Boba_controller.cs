@@ -426,13 +426,13 @@ public class Boba_controller : MonoBehaviour
                 circlecoll.enabled = false;
                 squashedcoll.enabled = true;
                 cannotMove = true;
-                FindObjectOfType<GameManager>().EndGame(); 
+                FindObjectOfType<GameManager>().EndGame();
             }
         }
 
         //被吸走死掉
         if (collision.gameObject.tag == "Straw") {
-            FindObjectOfType<GameManager>().EndGame(); 
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 
