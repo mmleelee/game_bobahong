@@ -395,6 +395,16 @@ public class Boba_controller : MonoBehaviour
             apple_acttime=true;
        
         }//道具壞蘋果
+
+
+//-------------------------------------------抵達終點---------------------------
+        if (collision.tag == "Finish") {
+            FindObjectOfType<GameManager>().EndGame();
+           
+            GameOverMenu.SetActive(true);
+            //Time.timeScale = 0f;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
         
     }
 
@@ -442,7 +452,7 @@ public class Boba_controller : MonoBehaviour
             GameOverMenu.SetActive(true);
             //Time.timeScale = 0f;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        } 
     }
 
     void CheckStatus()

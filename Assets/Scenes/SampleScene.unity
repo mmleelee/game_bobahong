@@ -1541,7 +1541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vSpeed: 0.5
-  hSpeed: 2
+  hSpeed: 1
   player: {fileID: 1629262546}
 --- !u!81 &324833727
 AudioListener:
@@ -6689,7 +6689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1629262543}
-  speed: 1.9
+  speed: 1.8
   speedBack: 1.2
   distanceBetween: 10
   pos: {fileID: 1467506796}
@@ -9659,7 +9659,7 @@ GameObject:
   - component: {fileID: 1806571658}
   m_Layer: 8
   m_Name: "_\u7D42\u9EDE"
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
