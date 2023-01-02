@@ -10,11 +10,12 @@ public class mainmenu : MonoBehaviour
     public AudioSource mainAudio;
     public void PlayButton()
     {
-       btnAudio.Play();
+        btnAudio.Play();
     }//按鈕音效
 
     public void PlayGame()
     {
+        //btnAudio.Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         
     }
