@@ -8,13 +8,12 @@ public class AnimationShow : MonoBehaviour
 {
     public GameObject skipMenu;
 
-    VideoPlayer playVideo = new VideoPlayer();
+    //VideoPlayer playVideo = new VideoPlayer();
 
-    void Start()
-    {
-        playVideo = GetComponent<VideoPlayer>();
-        //playVideo.playOnAwake = false;
-    }
+    //void Start()
+    //{
+    //    playVideo = GetComponent<VideoPlayer>();
+    //}
 
     public void GoToMainPage()
     {
@@ -24,13 +23,13 @@ public class AnimationShow : MonoBehaviour
 
     public void OpenSkip()
     {
-        playVideo.Pause();
+        //playVideo.Pause();
         skipMenu.SetActive(true);
     }
 
     public void Close()
     {
         skipMenu.SetActive(false);
-        playVideo.Play();
+        //playVideo.Play();
     }
 }
