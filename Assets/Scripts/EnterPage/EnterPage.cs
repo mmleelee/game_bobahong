@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class EnterPage : MonoBehaviour
 {
+     public void GoBackMain()
+    {
+        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+    
     public void GoToNext()
     {
         Destroy(GameObject.Find("Audio Source 2"));

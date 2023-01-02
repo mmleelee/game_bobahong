@@ -13,7 +13,6 @@ public class ChoosePage : MonoBehaviour
 
     public void GoToNext()
     {
-        //Destroy(GameObject.Find("AudioSource"));
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
     }

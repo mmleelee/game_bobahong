@@ -1191,8 +1191,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2005542458}
-        m_TargetAssemblyTypeName: ChoosePage, Assembly-CSharp
+      - m_Target: {fileID: 2005542459}
+        m_TargetAssemblyTypeName: EnterPage, Assembly-CSharp
         m_MethodName: GoBackMain
         m_Mode: 1
         m_Arguments:
