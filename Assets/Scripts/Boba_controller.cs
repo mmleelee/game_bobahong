@@ -60,8 +60,8 @@ public class Boba_controller : MonoBehaviour
     public float facedirection;
     public float horizontalMove;
 
-
-    public GameOverScreen GameOverMenu;//死亡視窗
+    //public GameObject gameOverScreen;
+   
 
 
     //測試用
@@ -403,11 +403,8 @@ public class Boba_controller : MonoBehaviour
 
 //-------------------------------------------抵達終點---------------------------
         if (collision.tag == "Finish") {
-            FindObjectOfType<GameManager>().EndGame();
-           
-            GameOverMenu.SetActive(true);
-            //Time.timeScale = 0f;
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            FindObjectOfType<GameManager>().EndGame1();
+
         }
         
     }
@@ -442,11 +439,11 @@ public class Boba_controller : MonoBehaviour
                 squashedcoll.enabled = true;
                 cannotMove = true;
                 FindObjectOfType<GameManager>().EndGame();
-                
+                //gameOverScreen.SetActive(true);
 
                 //GameOverMenu.SetActive(true);
-                Debug.Log(GameOverMenu);
-             
+                //Debug.Log(GameOverMenu);
+
                 //Time.timeScale = 0f;
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
@@ -455,9 +452,9 @@ public class Boba_controller : MonoBehaviour
         //被吸走死掉
         if (collision.gameObject.tag == "Straw") {
             FindObjectOfType<GameManager>().EndGame();
-           
+            //gameOverScreen.SetActive(true); 
             //GameOverMenu.SetActive(true);
-            Debug.Log(GameOverMenu);
+            //Debug.Log(GameOverMenu);
             //Time.timeScale = 0f;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         } 
@@ -475,6 +472,7 @@ public class Boba_controller : MonoBehaviour
     //摔死
     void FallToDeath() {
         if (transform.position.y < -10) {
+            //gameOverScreen.SetActive(true);
             FindObjectOfType<GameManager>().EndGame();
         }
     }
