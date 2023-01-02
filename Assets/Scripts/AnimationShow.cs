@@ -7,7 +7,6 @@ public class AnimationShow : MonoBehaviour
 {
     public GameObject skipMenu;
 
-
     public void GoToMainPage()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

@@ -3059,6 +3059,7 @@ GameObject:
   - component: {fileID: 577562184}
   - component: {fileID: 577562183}
   - component: {fileID: 577562187}
+  - component: {fileID: 577562188}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3167,6 +3168,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 888276490}
+--- !u!114 &577562188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577562182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ece9f63c00d8e4abd2bc676c6ea9d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpPressed: 0
+  crouchPressed: 0
+  standIsAble: 0
+  jumpCount: 0
+  circlecoll: {fileID: 0}
+  squarecoll: {fileID: 0}
+  squashedcoll: {fileID: 0}
+  ground:
+    serializedVersion: 2
+    m_Bits: 0
+  cellingCheck: {fileID: 0}
+  groundCheck: {fileID: 0}
+  jumpAudio: {fileID: 0}
+  collAudio: {fileID: 0}
+  candleAudio: {fileID: 0}
+  honeyAudio: {fileID: 0}
+  appleAudio: {fileID: 0}
+  EmptyeggImage: {fileID: 0}
+  eggImage: {fileID: 0}
+  EmptytailImage: {fileID: 0}
+  tailImage: {fileID: 0}
+  EmptyginsengImage: {fileID: 0}
+  ginsengImage: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  newSprite: {fileID: 0}
+  candle_acttime: 0
+  honey_acttime: 0
+  apple_acttime: 0
+  isJump: 0
+  isGround: 0
+  isCrouch: 0
+  Cherry: 0
+  jumpforce: 0
+  speed: 0
+  initialSpeed: 400
+  timer: 0
+  candleCurrentTime: 0
+  honeyCurrentTime: 0
+  appleCurrentTime: 0
+  facedirection: 0
+  horizontalMove: 0
 --- !u!1 &580266596
 GameObject:
   m_ObjectHideFlags: 0
@@ -10614,7 +10668,6 @@ GameObject:
   - component: {fileID: 2125839249}
   - component: {fileID: 2125839251}
   - component: {fileID: 2125839250}
-  - component: {fileID: 2125839252}
   m_Layer: 5
   m_Name: GameOverMenu
   m_TagString: Untagged
@@ -10682,56 +10735,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125839248}
   m_CullTransparentMesh: 1
---- !u!114 &2125839252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125839248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16ece9f63c00d8e4abd2bc676c6ea9d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpPressed: 0
-  crouchPressed: 0
-  standIsAble: 0
-  jumpCount: 0
-  circlecoll: {fileID: 0}
-  squarecoll: {fileID: 0}
-  squashedcoll: {fileID: 0}
-  ground:
-    serializedVersion: 2
-    m_Bits: 0
-  cellingCheck: {fileID: 0}
-  groundCheck: {fileID: 0}
-  jumpAudio: {fileID: 0}
-  collAudio: {fileID: 0}
-  candleAudio: {fileID: 0}
-  honeyAudio: {fileID: 0}
-  appleAudio: {fileID: 0}
-  EmptyeggImage: {fileID: 0}
-  eggImage: {fileID: 0}
-  EmptytailImage: {fileID: 0}
-  tailImage: {fileID: 0}
-  EmptyginsengImage: {fileID: 0}
-  ginsengImage: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  newSprite: {fileID: 0}
-  candle_acttime: 0
-  honey_acttime: 0
-  apple_acttime: 0
-  isJump: 0
-  isGround: 0
-  isCrouch: 0
-  Cherry: 0
-  jumpforce: 0
-  speed: 0
-  initialSpeed: 400
-  timer: 0
-  candleCurrentTime: 0
-  honeyCurrentTime: 0
-  appleCurrentTime: 0
-  facedirection: 0
-  horizontalMove: 0
