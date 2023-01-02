@@ -1541,7 +1541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vSpeed: 0.5
-  hSpeed: 1
+  hSpeed: 1.6
   player: {fileID: 1629262546}
 --- !u!81 &324833727
 AudioListener:
