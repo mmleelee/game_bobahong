@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2057460036}
+      - m_Target: {fileID: 761281376}
         m_TargetAssemblyTypeName: AnimationShow, Assembly-CSharp
         m_MethodName: GoToMainPage
         m_Mode: 1
@@ -346,6 +346,7 @@ GameObject:
   - component: {fileID: 761281373}
   - component: {fileID: 761281372}
   - component: {fileID: 761281375}
+  - component: {fileID: 761281376}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -455,6 +456,19 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &761281376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761281371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef55e0b12a53bc43a5bb1d76cdf9863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skipMenu: {fileID: 403655638}
 --- !u!1 &1072076323
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +698,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2057460036}
+      - m_Target: {fileID: 761281376}
         m_TargetAssemblyTypeName: AnimationShow, Assembly-CSharp
         m_MethodName: OpenSkip
         m_Mode: 1
@@ -746,7 +760,6 @@ GameObject:
   - component: {fileID: 2057460035}
   - component: {fileID: 2057460034}
   - component: {fileID: 2057460033}
-  - component: {fileID: 2057460036}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -837,19 +850,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &2057460036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2057460031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ef55e0b12a53bc43a5bb1d76cdf9863, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skipMenu: {fileID: 403655638}
 --- !u!1 &2067073078
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2057460036}
+      - m_Target: {fileID: 761281376}
         m_TargetAssemblyTypeName: AnimationShow, Assembly-CSharp
         m_MethodName: Close
         m_Mode: 1
