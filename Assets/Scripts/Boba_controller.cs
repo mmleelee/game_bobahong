@@ -61,7 +61,8 @@ public class Boba_controller : MonoBehaviour
     public float horizontalMove;
 
 
-    private GameObject GameOverMenu;
+    public GameOverScreen GameOverMenu;//死亡視窗
+
 
     //測試用
     // public bool flag=false;
@@ -428,8 +429,11 @@ public class Boba_controller : MonoBehaviour
                 squashedcoll.enabled = true;
                 cannotMove = true;
                 FindObjectOfType<GameManager>().EndGame();
+                
 
-                GameOverMenu.SetActive(true);
+                //GameOverMenu.SetActive(true);
+                Debug.Log(GameOverMenu);
+             
                 //Time.timeScale = 0f;
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
@@ -439,7 +443,8 @@ public class Boba_controller : MonoBehaviour
         if (collision.gameObject.tag == "Straw") {
             FindObjectOfType<GameManager>().EndGame();
            
-            GameOverMenu.SetActive(true);
+            //GameOverMenu.SetActive(true);
+            Debug.Log(GameOverMenu);
             //Time.timeScale = 0f;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
