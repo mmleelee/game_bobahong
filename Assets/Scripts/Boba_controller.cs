@@ -129,6 +129,9 @@ public class Boba_controller : MonoBehaviour
             jumpPressed = false;
         }
         CheckStatus();
+
+        //摔死
+        FallToDeath();
     }
    
     void FixedUpdate()
@@ -463,8 +466,13 @@ public class Boba_controller : MonoBehaviour
             flag = 0;
         }
     }
-
-
+    
+    //摔死
+    void FallToDeath() {
+        if (transform.position.y < -10) {
+            FindObjectOfType<GameManager>().EndGame();
+        }
+    }
    
 }
 
