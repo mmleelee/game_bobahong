@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Boba_controller : MonoBehaviour
 {
     private Rigidbody2D rb;
@@ -59,12 +60,12 @@ public class Boba_controller : MonoBehaviour
     public float facedirection;
     public float horizontalMove;
 
-    
 
-   
+    private GameObject GameOverMenu;
+
     //測試用
     // public bool flag=false;
-   
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -427,12 +428,20 @@ public class Boba_controller : MonoBehaviour
                 squashedcoll.enabled = true;
                 cannotMove = true;
                 FindObjectOfType<GameManager>().EndGame();
+
+                GameOverMenu.SetActive(true);
+                //Time.timeScale = 0f;
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 
         //被吸走死掉
         if (collision.gameObject.tag == "Straw") {
             FindObjectOfType<GameManager>().EndGame();
+           
+            GameOverMenu.SetActive(true);
+            //Time.timeScale = 0f;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
@@ -444,6 +453,8 @@ public class Boba_controller : MonoBehaviour
             flag = 0;
         }
     }
+
+
    
 }
 
