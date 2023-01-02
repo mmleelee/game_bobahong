@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class playMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
-
+    public GameObject GGMenu;
 
     public void GoBackChoosePage()
     {
@@ -24,6 +24,7 @@ public class playMenu : MonoBehaviour
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
+        //GGMenu.SetActive(true);
         Time.timeScale = 0f;
     }
 

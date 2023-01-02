@@ -438,6 +438,7 @@ public class Boba_controller : MonoBehaviour
         //被吸走死掉
         if (collision.gameObject.tag == "Straw") {
             FindObjectOfType<GameManager>().EndGame();
+           
             GameOverMenu.SetActive(true);
             //Time.timeScale = 0f;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
