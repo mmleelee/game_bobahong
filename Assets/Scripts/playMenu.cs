@@ -12,6 +12,7 @@ public class playMenu : MonoBehaviour
     public void GoBackChoosePage()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        Time.timeScale = 1f;
     }
 
     public void Restart()
