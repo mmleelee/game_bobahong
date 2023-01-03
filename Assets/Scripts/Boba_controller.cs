@@ -424,11 +424,11 @@ public class Boba_controller : MonoBehaviour
         }
         else if(collision.gameObject.tag == "Ant"){
             if(transform.position.x < collision.gameObject.transform.position.x){
-                rb.velocity = new Vector2(-5, rb.velocity.y);
+                rb.velocity = new Vector2(-3, rb.velocity.y);
                 isHurt = true;
             }
             else if(transform.position.x > collision.gameObject.transform.position.x){
-                rb.velocity = new Vector2(5, rb.velocity.y);
+                rb.velocity = new Vector2(3, rb.velocity.y);
                 isHurt = true;
             }
         }
