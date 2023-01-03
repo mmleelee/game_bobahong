@@ -807,9 +807,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2005542458}
-        m_TargetAssemblyTypeName: ChoosePage, Assembly-CSharp
+      - m_Target: {fileID: 2005542459}
+        m_TargetAssemblyTypeName: EnterPage, Assembly-CSharp
         m_MethodName: GoToNext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1676613603}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2697,6 +2709,7 @@ GameObject:
   - component: {fileID: 2005542457}
   - component: {fileID: 2005542456}
   - component: {fileID: 2005542458}
+  - component: {fileID: 2005542459}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -2779,6 +2792,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94f62198c838cbe4a9149f50471ec61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2005542459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005542454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb43aeab6c894ec42a9eade31e2e43ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2038309311
