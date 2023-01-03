@@ -7,6 +7,8 @@ public class ScrollBar : MonoBehaviour
 {
     private ScrollRect _ScrollRect;
 
+    public AudioSource scrollAudio;
+
     [SerializeField] private ScrollButton _leftButton;
     [SerializeField] private ScrollButton _rightButton;
 
@@ -24,6 +26,7 @@ public class ScrollBar : MonoBehaviour
         {
             if (_leftButton.isDown)
             {
+                scrollAudio.Play();
                 ScrollLeft();
             }
         }
@@ -32,6 +35,7 @@ public class ScrollBar : MonoBehaviour
         {
             if (_rightButton.isDown)
             {
+                scrollAudio.Play();
                 ScrollRight();
             }
         }
