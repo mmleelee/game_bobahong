@@ -29,6 +29,7 @@ public class Boba_controller : MonoBehaviour
     public AudioSource candleAudio;
     public AudioSource honeyAudio;
     public AudioSource appleAudio;
+    public AudioSource destroyAntAudio;
 
     public Image EmptyeggImage;
     public Sprite eggImage;
@@ -415,6 +416,7 @@ public class Boba_controller : MonoBehaviour
     {
         if(anim.GetBool("falling")){
             if(collision.gameObject.tag == "Ant" || collision.gameObject.tag == "Cookie"){
+                destroyAntAudio.Play();
                 Destroy(collision.gameObject);
                 rb.velocity = new Vector2( rb.velocity.x , jumpforce * Time.fixedDeltaTime);
                 anim.SetBool("jumping", true);
@@ -433,6 +435,7 @@ public class Boba_controller : MonoBehaviour
         else if(collision.gameObject.tag == "Cookie"){
             if(transform.position.x < collision.gameObject.transform.position.x){
                 isHurt = true;
+                destroyAntAudio.Play();
                 anim.SetBool("squashed",true);
                 squarecoll.enabled = false;
                 circlecoll.enabled = false;

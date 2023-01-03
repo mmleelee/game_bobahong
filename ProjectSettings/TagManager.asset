@@ -16,6 +16,9 @@ TagManager:
   - Ant
   - Straw
   - GameMusic
+  - WinMusic
+  - FailMusic
+  - StopMusic
   layers:
   - Default
   - TransparentFX
