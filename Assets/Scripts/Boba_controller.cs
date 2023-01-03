@@ -415,7 +415,8 @@ public class Boba_controller : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(anim.GetBool("falling")){
-            if(collision.gameObject.tag == "Ant" || collision.gameObject.tag == "Cookie"){
+            if(collision.gameObject.tag == "Ant"){
+                // || collision.gameObject.tag == "Cookie"
                 destroyAntAudio.Play();
                 Destroy(collision.gameObject);
                 rb.velocity = new Vector2( rb.velocity.x , jumpforce * Time.fixedDeltaTime);
