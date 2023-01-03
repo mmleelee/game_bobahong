@@ -15,6 +15,7 @@ TagManager:
   - Cookie
   - Ant
   - Straw
+  - GameMusic
   layers:
   - Default
   - TransparentFX
