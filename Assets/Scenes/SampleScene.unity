@@ -1348,7 +1348,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 15328e6582e535d4e8355744828111b7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -26244,7 +26244,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 88942b51f3dc47246b38ba0fa281cd60, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -30438,7 +30438,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 1852931855}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: dc886d2f5eecb1f46ad14ac13b8f6e37, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -33660,7 +33660,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 15328e6582e535d4e8355744828111b7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
