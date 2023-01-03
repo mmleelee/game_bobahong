@@ -60,8 +60,9 @@ public class Boba_controller : MonoBehaviour
     public float facedirection;
     public float horizontalMove;
 
+    //public GameObject gameOverScreen;
+   
 
-    private GameObject GameOverMenu;
 
     //測試用
     // public bool flag=false;
@@ -129,6 +130,9 @@ public class Boba_controller : MonoBehaviour
             jumpPressed = false;
         }
         CheckStatus();
+
+        //摔死
+        FallToDeath();
     }
    
     void FixedUpdate()
@@ -395,6 +399,13 @@ public class Boba_controller : MonoBehaviour
             apple_acttime=true;
        
         }//道具壞蘋果
+
+
+//-------------------------------------------抵達終點---------------------------
+        if (collision.tag == "Finish") {
+            FindObjectOfType<GameManager>().EndGame1();
+
+        }
         
     }
 
@@ -428,8 +439,11 @@ public class Boba_controller : MonoBehaviour
                 squashedcoll.enabled = true;
                 cannotMove = true;
                 FindObjectOfType<GameManager>().EndGame();
+                //gameOverScreen.SetActive(true);
 
-                GameOverMenu.SetActive(true);
+                //GameOverMenu.SetActive(true);
+                //Debug.Log(GameOverMenu);
+
                 //Time.timeScale = 0f;
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
@@ -438,11 +452,12 @@ public class Boba_controller : MonoBehaviour
         //被吸走死掉
         if (collision.gameObject.tag == "Straw") {
             FindObjectOfType<GameManager>().EndGame();
-           
-            GameOverMenu.SetActive(true);
+            //gameOverScreen.SetActive(true); 
+            //GameOverMenu.SetActive(true);
+            //Debug.Log(GameOverMenu);
             //Time.timeScale = 0f;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        } 
     }
 
     void CheckStatus()
@@ -453,8 +468,14 @@ public class Boba_controller : MonoBehaviour
             flag = 0;
         }
     }
-
-
+    
+    //摔死
+    void FallToDeath() {
+        if (transform.position.y < -10) {
+            //gameOverScreen.SetActive(true);
+            FindObjectOfType<GameManager>().EndGame();
+        }
+    }
    
 }
 
