@@ -234,9 +234,18 @@ public class Boba_controller : MonoBehaviour
             anim.SetFloat("walking" , Mathf.Abs(facedirection));//走路動畫
         }//左右移動
 
-        if(facedirection != 0 ){
-            transform.localScale = new Vector3( facedirection  , 1,1);
+        if(facedirection < 0 ){
+           GetComponent<SpriteRenderer>().flipX=true;
         }//面向左右
+
+        if (facedirection > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        //if (facedirection != 0)
+        //{
+        //    transform.localScale = new Vector3(facedirection, 1, 1);
+        //}//面向左右
 
         // if(Input.GetButtonDown("Jump") && !apple_acttime){
         //      rb.velocity = new Vector2( rb.velocity.x , jumpforce * Time.fixedDeltaTime);
