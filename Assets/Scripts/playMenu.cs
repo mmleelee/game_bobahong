@@ -8,8 +8,9 @@ public class playMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject GGMenu;
-
-    //public AudioSource stopAudio;
+    public GameObject GGMenu;
+    
+    
 
     public void GoBackChoosePage()
     {
@@ -27,6 +28,7 @@ public class playMenu : MonoBehaviour
     {
         // stopAudio = GameObject.FindGameObjectWithTag ("StopMusic").GetComponent<AudioSource> ();
         // stopAudio.Play();
+        
         pauseMenu.SetActive(true);
         //GGMenu.SetActive(true);
         
