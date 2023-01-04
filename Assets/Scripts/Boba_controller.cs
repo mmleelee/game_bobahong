@@ -336,7 +336,7 @@ public class Boba_controller : MonoBehaviour
          else if(isHurt)
         {
             //anim.SetBool("hurt",true);
-            anim.SetFloat("running",0);
+            anim.SetFloat("walking",0);
             if(Mathf.Abs(rb.velocity.x) < 0.1f)
             {
                 anim.SetBool("hurt",false);
