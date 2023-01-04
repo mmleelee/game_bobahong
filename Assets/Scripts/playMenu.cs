@@ -8,7 +8,7 @@ public class playMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject GGMenu;
-    public GameObject GGMenu;
+    //public GameObject GGMenu;
     
     
 
