@@ -10,6 +10,12 @@ public class playMenu : MonoBehaviour
     public GameObject GGMenu;
     //public GameObject GGMenu;
     
+    public void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape)==true){
+            PauseGame();
+        }
+    }
     
 
     public void GoBackChoosePage()
@@ -26,8 +32,7 @@ public class playMenu : MonoBehaviour
 
     public void PauseGame()
     {
-        // stopAudio = GameObject.FindGameObjectWithTag ("StopMusic").GetComponent<AudioSource> ();
-        // stopAudio.Play();
+       
         
         pauseMenu.SetActive(true);
         //GGMenu.SetActive(true);
