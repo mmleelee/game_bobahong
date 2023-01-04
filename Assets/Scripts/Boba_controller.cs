@@ -18,7 +18,6 @@ public class Boba_controller : MonoBehaviour
 
     public Collider2D circlecoll;
     public Collider2D squarecoll;
-    public Collider2D squashedcoll;
     public LayerMask ground;
     public Transform cellingCheck;
     public Transform groundCheck;
@@ -438,9 +437,8 @@ public class Boba_controller : MonoBehaviour
                 isHurt = true;
                 destroyAntAudio.Play();
                 anim.SetBool("squashed",true);
-                squarecoll.enabled = false;
+                squarecoll.enabled = true;
                 circlecoll.enabled = false;
-                squashedcoll.enabled = true;
                 cannotMove = true;
                 FindObjectOfType<GameManager>().EndGame();
                 //gameOverScreen.SetActive(true);
