@@ -12595,6 +12595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 888276490}
   GGMenu: {fileID: 0}
+  bgAudio: {fileID: 1231939519}
 --- !u!114 &577562188
 MonoBehaviour:
   m_ObjectHideFlags: 0

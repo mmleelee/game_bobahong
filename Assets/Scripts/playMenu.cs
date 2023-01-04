@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class playMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject GGMenu;
-    //public GameObject GGMenu;
-    
+    public AudioSource bgAudio;
+
     public void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape)==true){
@@ -32,17 +33,16 @@ public class playMenu : MonoBehaviour
 
     public void PauseGame()
     {
-       
-        
         pauseMenu.SetActive(true);
         //GGMenu.SetActive(true);
-        
+        bgAudio.Pause();
         Time.timeScale = 0f;
     }
 
     public void ContinueGame()
     {
         pauseMenu.SetActive(false);
+        bgAudio.Play();
         Time.timeScale = 1f;
     }
 
